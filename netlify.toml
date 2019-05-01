@@ -1,4 +1,3 @@
 [build]
   command = "yarn generate"
-  functions = "src/lambda"
   publish = "dist"
