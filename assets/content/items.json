@@ -1,0 +1,32 @@
+[
+  {
+    "id": "node",
+    "label": "Node.js",
+    "icon": "https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png",
+    "description": "Node.js is useful!"
+  },
+  {
+    "id": "postman",
+    "label": "Postman",
+    "icon": "https://raw.githubusercontent.com/codotype/codotype-postman-collection-generator/master/postman.png",
+    "description": "Postman is cool!"
+  },
+  {
+    "id": "vue",
+    "label": "Vue.js",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1551192656/tech-logos/vue.png",
+    "description": "Vue.js is fun!"
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "icon": "https://raw.githubusercontent.com/codotype/codotype-python-falcon-mongodb-generator/master/python.png",
+    "description": "Python is simple, in a good way!"
+  },
+  {
+    "id": "react",
+    "label": "React",
+    "icon": "https://res.cloudinary.com/codotype/image/upload/v1553197668/tech-logos/react.png",
+    "description": "React is versatile!"
+  }
+]
