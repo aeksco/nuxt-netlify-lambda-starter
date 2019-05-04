@@ -1,7 +1,6 @@
-export function handler(event, context, callback) {
-  console.log(event)
+exports.handler = function(event, context, callback) {
   callback(null, {
     statusCode: 200,
-    body: JSON.stringify({ msg: "Hello from Netlify Lambda!" })
+    body: 'Hello, World'
   })
 }

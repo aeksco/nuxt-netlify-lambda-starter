@@ -15,6 +15,7 @@ The Vue app is prerendered for improved SEO - you can learn more about server-si
 $ yarn install
 
 # serve with hot reload at localhost:3000
+# serves netlify-lambda functions
 $ yarn run dev
 
 # build for production and launch server
