@@ -1,3 +1,5 @@
+# Doc: https://www.netlify.com/docs/netlify-toml-reference/
 [build]
-  command = "yarn generate"
+  command = "yarn build"
+  functions = "lambdas-dist"
   publish = "dist"
