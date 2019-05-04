@@ -63,6 +63,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy',
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     // Doc: https://www.npmjs.com/package/vue-github-buttons#using-with-nuxt
@@ -75,7 +77,20 @@ export default {
     bootstrapVueCSS: false // or `bvCSS`
   },
 
-  // Environment variable configuration
+  // @nuxtjs/axios plugin configuration
+  axios: {
+    baseURL: '/'
+  },
+
+  // @nuxtjs/proxy configuration
+  proxy: {
+    '/.netlify': {
+      target: 'http://localhost:9000',
+      pathRewrite: { '^/.netlify/functions': '' }
+    }
+  },
+
+  // Frontend environment variables configuration
   // Doc: https://nuxtjs.org/api/configuration-env
   env: {
     HOTJAR_SITE_ID: process.env.HOTJAR_SITE_ID ? Number(process.env.HOTJAR_SITE_ID) : undefined,
