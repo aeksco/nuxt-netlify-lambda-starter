@@ -1,21 +1,21 @@
 <template>
-  <section class="container">
-    <div class="row mt-3 mb-5">
-      <div class="col-lg-12">
+  <b-container>
+    <b-row class="mt-3 mb-5">
+      <b-col lg="12">
         <h2 class="mb-0">Hello World Lambda</h2>
         <p class="text-muted">
           A very simple lambda function that returns some text
         </p>
-      </div>
+      </b-col>
 
       <b-col lg="12">
-        <div class="card card-body bg-dark text-light">
+        <b-card class="bg-dark text-light">
           <b-row>
             <b-col v-if="loading" lg="12" class="text-center">
               <font-awesome-icon size="4x" icon="spinner" spin />
             </b-col>
             <b-col v-else lg="12">
-              <p>Response from Lambda: {{ response }}</p>
+              <p class="mb-0">Response from Lambda: {{ response }}</p>
               <p v-if="error">
                 <strong>Error {{ error.status }}</strong>
                 <br />
@@ -23,10 +23,10 @@
               </p>
             </b-col>
           </b-row>
-        </div>
+        </b-card>
       </b-col>
-    </div>
-  </section>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

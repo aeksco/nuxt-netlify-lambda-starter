@@ -1,12 +1,12 @@
 <template>
-  <section class="container">
-    <div class="row mt-3 mb-5">
-      <div class="col-lg-12">
+  <b-container>
+    <b-row class="mt-3 mb-5">
+      <b-col lg="12">
         <h2 class="mb-0">Items</h2>
         <p class="text-muted">
           Pre-render dynamic pages from static data
         </p>
-      </div>
+      </b-col>
 
       <b-col lg="12">
         <b-row>
@@ -15,8 +15,8 @@
           </b-col>
         </b-row>
       </b-col>
-    </div>
-  </section>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

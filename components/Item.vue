@@ -1,7 +1,7 @@
 <template>
-  <div class="card card-body mb-2">
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-between align-items-center">
+  <b-card class="mb-2">
+    <b-row>
+      <b-col lg="12" class="d-flex justify-content-between align-items-center">
         <p
           class="lead mb-0 w-100 d-flex justify-content-between align-items-center"
         >
@@ -10,15 +10,15 @@
             {{ model.label }}
           </router-link>
         </p>
-      </div>
+      </b-col>
 
-      <div class="col-lg-12">
+      <b-col lg="12">
         <p class="card-text mb-2">
           {{ model.description }}
         </p>
-      </div>
-    </div>
-  </div>
+      </b-col>
+    </b-row>
+  </b-card>
 </template>
 
 <script>

@@ -1,24 +1,24 @@
 <template>
-  <section class="container">
-    <div class="row mt-3 mb-5">
-      <div class="col-lg-12">
+  <b-container>
+    <b-row class="mt-3 mb-5">
+      <b-col lg="12">
         <h2 class="mb-0">Lambdas</h2>
         <p class="text-muted">
           A series of example Netlify Lambda functions
         </p>
-      </div>
+      </b-col>
 
       <b-col lg="12">
         <b-row>
           <b-col lg="12">
-            <div class="card card-body">
+            <b-card>
               <router-link to="/lambdas/hello">Hello, World Lambda</router-link>
-            </div>
+            </b-card>
           </b-col>
         </b-row>
       </b-col>
-    </div>
-  </section>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

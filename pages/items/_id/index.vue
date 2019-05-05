@@ -1,8 +1,8 @@
 <template>
-  <section class="container mt-4">
+  <b-container class="mt-4">
     <router-link to="/items">Back</router-link>
     <Item :model="model" />
-  </section>
+  </b-container>
 </template>
 
 <script>
