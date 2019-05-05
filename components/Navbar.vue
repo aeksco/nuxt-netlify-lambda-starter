@@ -10,6 +10,10 @@
         <b-nav-item to="/items">
           Items
         </b-nav-item>
+
+        <b-nav-item to="/lambdas">
+          Lambdas
+        </b-nav-item>
       </b-navbar-nav>
 
       <b-navbar-nav class="ml-auto">

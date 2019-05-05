@@ -9,6 +9,7 @@ import {
   faHeart,
   faInfoCircle,
   faQuestionCircle,
+  faSpinner,
   faTimes
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -26,6 +27,7 @@ library.add(faDraftingCompass)
 library.add(faHeart)
 library.add(faInfoCircle)
 library.add(faQuestionCircle)
+library.add(faSpinner)
 library.add(faTimes)
 
 // FontAwesome Brand Icons
