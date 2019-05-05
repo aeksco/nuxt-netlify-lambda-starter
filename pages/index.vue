@@ -25,50 +25,79 @@
         </div>
 
         <div class="col-lg-12 d-flex flex-column align-items-center">
-          <h4>Features</h4>
+          <h4>Overview</h4>
           <ul class="lead">
             <li>
-              Pre-rendered app with <a href="http://netlify.com">Vue</a> +
-              <a href="http://netlify.com">Nuxt.js</a>
+              Pre-rendered app with
+              <a href="https://vuejs.org" target="_blank">Vue</a> +
+              <a href="https://nuxtjs.org" target="_blank">Nuxt.js</a>
             </li>
             <li>
-              Run Lambdas on <a href="http://netlify.com">Netlify</a> - wow!
+              Deploy the full stack in seconds with
+              <a href="http://netlify.com" target="_blank">Netlify</a>
             </li>
             <li>
-              Deploy in seconds, with <a href="http://netlify.com">Netlify</a>!
+              Amaze your <a href="/friends">friends</a>
+              with dynamic static pages
             </li>
-            <li>Amaze your <a href="/friends">friends</a>!</li>
           </ul>
         </div>
 
         <div class="col-lg-12 d-flex flex-column align-items-center">
-          <div class="d-flex flex-column">
-            <h4>Features</h4>
-            <ul>
-              <li>
-                Includes <a href="https://google.com">Google Analytics</a>,
-                <a href="https://google.com">HotJar</a>, and
-                <a href="https://google.com">MailChimp</a> out of the box
-              </li>
-              <li>
-                Includes <a href="https://google.com">JSON-LD</a> snippet for
-                fantastic SEO
-              </li>
-              <li>
-                Bundled with <a href="https://google.com">FontAwesome 5</a>,
-                optimized for performance
-              </li>
-              <li>
-                Built with <a href="https://google.com">Bootstrap</a> &amp;
-                <a href="https://google.com">Bootsrap-Vue</a>
-              </li>
+          <h4>Features</h4>
+          <ul>
+            <li>
+              Includes
+              <a
+                href="https://analytics.google.com/analytics/web/#/"
+                target="_blank"
+              >
+                Google Analytics
+              </a>
+              ,
+              <a href="https://hotjar.com" target="_blank">HotJar</a>, and
+              <a href="https://mailchimp.com" target="_blank">
+                MailChimp
+              </a>
+              out of the box
+            </li>
+            <li>
+              Includes
+              <a
+                href="https://developers.google.com/search/docs/guides/intro-structured-data"
+                target="_blank"
+              >
+                JSON-LD
+              </a>
+              snippet for fantastic SEO
+            </li>
+            <li>
+              Bundled with
+              <a
+                href="https://github.com/FortAwesome/vue-fontawesome"
+                target="_blank"
+              >
+                FontAwesome 5
+              </a>
+              optimized for performance
+            </li>
+            <li>
+              Built with
+              <a href="https://getbootstrap.com" target="_blank">
+                Bootstrap
+              </a>
+              &amp;
+              <a href="https://bootstrap-vue.js.org/" target="_blank">
+                Bootsrap-Vue
+              </a>
+            </li>
 
-              <li>
-                Written in <a href="https://Es.com">ES6</a> &amp;
-                <a href="https://google.com">SASS</a>
-              </li>
-            </ul>
-          </div>
+            <li>
+              Written in
+              <a href="https://es6.io/" target="_blank">ES6</a> &amp;
+              <a href="https://sass-lang.com" target="_blank">SASS</a>
+            </li>
+          </ul>
         </div>
 
         <div
@@ -86,6 +115,9 @@
           </p>
 
           <gh-btns-follow class="mt-3" user="aeksco" show-count />
+
+          <br />
+          <br />
         </div>
       </div>
     </div>

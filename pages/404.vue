@@ -16,10 +16,12 @@
             Sorry about your friends, bud :(
           </p>
           <p class="lead mb-0 mt-2">
-            <span>You can be friends with me maybe?</span>
+            <span>But you can be friends with me maybe?</span>
             <a href="https://github.com/aeksco" target="_blank">@aeksco</a>
           </p>
-          <gh-btns-follow class="mt-3" user="aeksco" show-count />
+          <div class="d-flex flex-column align-items-center">
+            <gh-btns-follow class="mt-3" user="aeksco" show-count />
+          </div>
         </div>
       </div>
     </div>
