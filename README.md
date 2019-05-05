@@ -1,31 +1,60 @@
 # nuxt-netlify-lambda-starter
 
-This is a basic starter project for a prerendered [Vue](https://vuejs.org/) + [Nuxt](https://nuxtjs.org/) frontend with a [Netlify lambda function](https://www.netlify.com/docs/functions/) backend.
+:hammer_and_wrench: SEO-friendly website starter backed by Netlify lambda functions in a simple, friendly repo
 
-##### [You can view the deployed app here](https://nuxt-netlify-lambda-starter.netlify.com/)
+This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) + [Nuxt.js](https://nuxtjs.org/) frontend with a [Netlify lambda function](https://www.netlify.com/docs/functions/) backend. The Nuxt.js app is pre-rendered for improved SEO.
 
-The Vue app is prerendered for improved SEO - you can learn more about server-side rendering and prerendering with Vue [here](https://ssr.vuejs.org/#ssr-vs-prerendering).
+### [You can view the deployed app here](https://nuxt-netlify-lambda-starter.netlify.com/)
+
+#### Features
+- Home and About Pages
+- `HelloWorld` example Lambda function with associated frontend code
+- Pre-rendered dynamic pages using a sample `Item` datatype
+- Integrates with [HotJar](https://hotjar.com"), [Mailchimp](https://mailchimp.com"), and [Google Analytics](https://analytics.google.com/analytics/web/#/)
+- Includes [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
 
 **NOTE:** this project can only be deployed via Netlify with [continuous deployment](https://www.netlify.com/docs/continuous-deployment/) enabled.
 
-## Build Setup
+#### Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
-# serves netlify-lambda functions
+# Serve with hot reload at localhost:3000 and serves Netlify Functions
 $ yarn run dev
 
-# build for production and launch server
+# Build for production
 $ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+#### Environment Configuration
+The following production environment variables are required for the respective plugins to work correctly:
 
-Includes Nuxt `README.md` files for context
+```bash
+# Google Analytics Tracking Code
+GA_TRACKING_ID=UA-XXX-X
+
+# HotJar Site Identifier
+HOTJAR_SITE_ID=1234567
+
+# Mailchimp Script Variables
+MAILCHIMP_BASE_URL=mc.us19.list-manage.com
+MAILCHIMP_LID=abcde12345
+MAILCHIMP_UUID=aabbccddeeffgghhiijj12345
+```
+
+These variables can be configured in a variety of ways - please consult the [Netlify Continuous Deployment Docs](https://www.netlify.com/docs/continuous-deployment/#environment-variables). You can deactivate any of these plugins by modifying the `plugins` field in the `nuxt.config.js` file.
+
+#### JSON-LD Structured Data
+
+The [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) can be updated by modifying the `jsonld()` function in the `layouts/default.vue` file. This feature shouldn't be used anywhere else - one `JSON-LD` snippet should describe the entire site.
+
+#### References
+- [Vue.js](https://vuejs.org)
+- [Nuxt.js](https://nuxtjs.org)
+- [Netlify Functions](https://www.netlify.com/docs/functions/)
+- [Bootstrap-Vue](https://bootstrap-vue.js.org/)
+- [Bootstrap Components](https://getbootstrap.com/docs/4.3/components/alerts/)
+- [FontAwesome Vue](https://github.com/FortAwesome/vue-fontawesome)
+- [`netlify.toml` Docs](https://www.netlify.com/docs/netlify-toml-reference/)

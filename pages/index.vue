@@ -8,6 +8,7 @@
               wow, it's...
             </p>
             <h4 class="display-4">Nuxt Netlify Lambda Starter</h4>
+            <img class="logo" src="https://vuejs.org/images/logo.png" />
           </b-col>
         </b-row>
 
@@ -155,4 +156,7 @@ p.wow
   font-size: 1.5rem
   margin-bottom: 0
   font-family: "Comic Sans MS", cursive, sans-serif
+
+img.logo
+  max-width: 4rem
 </style>
