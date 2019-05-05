@@ -6,7 +6,7 @@ This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) +
 
 ### [You can view the deployed app here](https://nuxt-netlify-lambda-starter.netlify.com/)
 
-#### Features
+### Features
 - Home and About Pages
 - `HelloWorld` example Lambda function with associated frontend code
 - Pre-rendered dynamic pages using a sample `Item` datatype
@@ -16,7 +16,7 @@ This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) +
 
 **NOTE:** this project can only be deployed via Netlify with [continuous deployment](https://www.netlify.com/docs/continuous-deployment/) enabled.
 
-#### Build Setup
+### Build Setup
 
 ``` bash
 # Install dependencies
@@ -29,7 +29,7 @@ $ yarn run dev
 $ yarn run build
 ```
 
-#### Pre-rendered Dynamic Pages
+### Pre-rendered Dynamic Pages
 
 This project includes a series of pre-rendered pages using a generic `Item` datatype. The data for these pages is maintained in `assets/content/items.json` and they're generated with a custom `generate` field in `nuxt.config.js`:
 
@@ -41,7 +41,7 @@ generate: {
 
 This ensures that each item has a page that's pre-renderd and SEO-optimized. You can clone, modify, or remove the `Item` datatype and associated pages to better suit your needs.
 
-#### Environment Configuration
+### Environment Configuration
 The following production environment variables are required for the respective plugins to work correctly:
 
 ```bash
@@ -59,21 +59,21 @@ MAILCHIMP_UUID=aabbccddeeffgghhiijj12345
 
 These variables can be configured in a variety of ways - please consult the [Netlify Continuous Deployment Docs](https://www.netlify.com/docs/continuous-deployment/#environment-variables). You can deactivate any of these plugins by modifying the `plugins` field in the `nuxt.config.js` file.
 
-#### JSON-LD Structured Data
+### JSON-LD Structured Data
 
 The [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) can be updated by modifying the `jsonld()` function in the `layouts/default.vue` file. This feature shouldn't be used anywhere else - one `JSON-LD` snippet should describe the entire site.
 
-#### Bootstrap + SASS Configuration
+### Bootstrap + SASS Configuration
 
 You can modify the `assets/sass/main.sass` file to optionally include Bootstrap component styles as-needed. **PROTIP** - only include the Bootstrap components your app depends on - this will keep your CSS bundle nice and slim :)
 
 You can also modify any of [Bootstrap's SASS Variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss) inside the `assets/sass/variables.sass` file to customize the framework to your liking.
 
-#### FontAwesome Vue Configuration
+### FontAwesome Vue Configuration
 
 The repo includes a minimal subset of icons by default. When you need an additional icon, you must import it directly in `plugins/fontawesome.js` and register it with the FontAwesome plugin. You can learn more about the Vue-FontAwesome library [here](https://github.com/FortAwesome/vue-fontawesome).
 
-#### References
+### References
 - [Vue.js](https://vuejs.org)
 - [Nuxt.js](https://nuxtjs.org)
 - [Netlify Functions](https://www.netlify.com/docs/functions/)
