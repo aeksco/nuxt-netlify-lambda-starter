@@ -24,6 +24,10 @@
           </p>
         </div>
 
+        <div class="col-lg-12 d-flex flex-column align-items-center mb-3">
+          <gh-btns-star slug="aeksco/nuxt-netlify-lambda-starter" show-count />
+        </div>
+
         <div class="col-lg-12 d-flex flex-column align-items-center">
           <h4>Overview</h4>
           <ul class="lead">
@@ -103,10 +107,6 @@
         <div
           class="col-lg-12 text-center d-flex flex-column align-items-center"
         >
-          <gh-btns-star slug="aeksco/nuxt-netlify-lambda-starter" show-count />
-
-          <br />
-
           <p class="lead mb-0 mt-2">
             <span>Built with </span>
             <font-awesome-icon icon="heart" class="text-danger" />
