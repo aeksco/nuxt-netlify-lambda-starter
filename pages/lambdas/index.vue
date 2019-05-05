@@ -11,7 +11,9 @@
       <b-col lg="12">
         <b-row>
           <b-col lg="12">
-            Lambdas go here
+            <div class="card card-body">
+              <router-link to="/lambdas/hello">Hello, World Lambda</router-link>
+            </div>
           </b-col>
         </b-row>
       </b-col>
