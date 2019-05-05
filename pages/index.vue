@@ -111,16 +111,10 @@ export default {
 
 <style scoped lang="sass">
 p.wow
-  // color: blue
   -ms-transform: rotate(-7deg)
   -webkit-transform: rotate(-7deg)
   transform: rotate(-7deg)
-  // margin-left: 10%
-  // position: absolute
-  // left: 0
   font-size: 1.5rem
   margin-bottom: 0
   font-family: "Comic Sans MS", cursive, sans-serif
-// .header
-//   transform: scale(1, 1.5) skew(10deg, 0deg)
 </style>

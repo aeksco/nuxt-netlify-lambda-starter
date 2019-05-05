@@ -2,16 +2,16 @@
   <section class="container">
     <div class="row mt-3 mb-5">
       <div class="col-lg-12">
-        <h2 class="mb-0">Items</h2>
+        <h2 class="mb-0">Lambdas</h2>
         <p class="text-muted">
-          Pre-render dynamic pages from static data
+          A series of example Netlify Lambda functions
         </p>
       </div>
 
       <b-col lg="12">
         <b-row>
           <b-col lg="12">
-            <Item v-for="m in collection" :key="m.id" :model="m" />
+            Lambdas go here
           </b-col>
         </b-row>
       </b-col>
@@ -20,16 +20,10 @@
 </template>
 
 <script>
-import Item from '~/components/Item.vue'
-import items from '~/assets/content/items.json'
-
 export default {
-  components: {
-    Item
-  },
   head() {
     return {
-      title: 'Nuxt Netlify Lambda Starter - Items',
+      title: 'Nuxt Netlify Lambda Starter - Lambdas',
       meta: [
         {
           hid: 'description',
@@ -37,11 +31,6 @@ export default {
           content: 'My custom description'
         }
       ]
-    }
-  },
-  data() {
-    return {
-      collection: items
     }
   }
 }
