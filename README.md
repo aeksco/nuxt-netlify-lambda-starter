@@ -50,6 +50,14 @@ These variables can be configured in a variety of ways - please consult the [Net
 
 The [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) can be updated by modifying the `jsonld()` function in the `layouts/default.vue` file. This feature shouldn't be used anywhere else - one `JSON-LD` snippet should describe the entire site.
 
+#### Bootstrap + SASS Configuration
+
+You can modify the `assets/sass/main.sass` file to optionally include Bootstrap component styles as-needed. **PROTIP** - only include the Bootstrap components your app depends on - this will keep your CSS bundle nice and slim :)
+
+#### FontAwesome Vue Configuration
+
+The repo includes a minimal subset of icons by default. When you need an additional icon, you must import it directly in `plugins/fontawesome.js` and register it with the FontAwesome plugin. You can learn more about the Vue-FontAwesome library [here](https://github.com/FortAwesome/vue-fontawesome).
+
 #### References
 - [Vue.js](https://vuejs.org)
 - [Nuxt.js](https://nuxtjs.org)

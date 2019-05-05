@@ -116,7 +116,7 @@
             <p class="lead mb-0 mt-2">
               <span>Built with </span>
               <font-awesome-icon icon="heart" class="text-danger" />
-              <span class="px-1">by</span>
+              <span>by</span>
               <a href="https://github.com/aeksco" target="_blank">@aeksco</a>
             </p>
 
