@@ -7,11 +7,11 @@ This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) +
 ### [You can view the deployed app here](https://nuxt-netlify-lambda-starter.netlify.com/)
 
 ### Features
-- Home and About Pages
+- Home, About, and 404 Pages
 - `HelloWorld` example Lambda function with associated frontend code
 - Pre-rendered dynamic pages using a sample `Item` datatype
 - Integrates with [HotJar](https://hotjar.com"), [Mailchimp](https://mailchimp.com"), and [Google Analytics](https://analytics.google.com/analytics/web/#/)
-- Includes [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
+- Includes [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) for outstanding SEO
 - Customizable UI using [Bootstrap](https://getbootstrap.com) & [SASS](https://sass-lang.com) variables
 
 **NOTE:** this project can only be deployed via Netlify with [continuous deployment](https://www.netlify.com/docs/continuous-deployment/) enabled.
