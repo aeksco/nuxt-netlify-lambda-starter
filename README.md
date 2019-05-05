@@ -12,6 +12,7 @@ This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) +
 - Pre-rendered dynamic pages using a sample `Item` datatype
 - Integrates with [HotJar](https://hotjar.com"), [Mailchimp](https://mailchimp.com"), and [Google Analytics](https://analytics.google.com/analytics/web/#/)
 - Includes [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
+- Customizable UI using [Bootstrap](https://getbootstrap.com) & [SASS](https://sass-lang.com) variables
 
 **NOTE:** this project can only be deployed via Netlify with [continuous deployment](https://www.netlify.com/docs/continuous-deployment/) enabled.
 
@@ -27,6 +28,18 @@ $ yarn run dev
 # Build for production
 $ yarn run build
 ```
+
+#### Pre-rendered Dynamic Pages
+
+This project includes a series of pre-rendered pages using a generic `Item` datatype. The data for these pages is maintained in `assets/content/items.json` and they're generated with a custom `generate` field in `nuxt.config.js`:
+
+```js
+generate: {
+  routes: items.map(g => '/items/' + g.id)
+}
+```
+
+This ensures that each item has a page that's pre-renderd and SEO-optimized. You can clone, modify, or remove the `Item` datatype and associated pages to better suit your needs.
 
 #### Environment Configuration
 The following production environment variables are required for the respective plugins to work correctly:
@@ -53,6 +66,8 @@ The [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/i
 #### Bootstrap + SASS Configuration
 
 You can modify the `assets/sass/main.sass` file to optionally include Bootstrap component styles as-needed. **PROTIP** - only include the Bootstrap components your app depends on - this will keep your CSS bundle nice and slim :)
+
+You can also modify any of [Bootstrap's SASS Variables](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss) inside the `assets/sass/variables.sass` file to customize the framework to your liking.
 
 #### FontAwesome Vue Configuration
 
