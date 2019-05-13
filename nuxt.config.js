@@ -79,7 +79,7 @@ export default {
 
   // @nuxtjs/axios plugin configuration
   axios: {
-    baseURL: '/'
+    prefix: '/'
   },
 
   // @nuxtjs/proxy configuration
