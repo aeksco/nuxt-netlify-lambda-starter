@@ -17,7 +17,7 @@ export default {
       // Twitter Card Meta
       // Doc: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
       { property: 'twitter:card', content: 'summary' },
-      { property: 'twitter:site', value: '@codotype' },
+      { property: 'twitter:site', value: '@aeksco' },
       { property: 'twitter:creator', value: '@aeksco' },
 
       // OpenGraph Meta
@@ -26,7 +26,9 @@ export default {
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: 'Nuxt Netlify Lambda Starter' },
       { property: 'og:description', content: 'SEO-friendly website starter backed by Netlify lambda functions' },
-      { property: 'og:image', content: 'https://nuxtjs.org/meta_640.png' }
+      { property: 'og:image', content: 'https://nuxtjs.org/meta_640.png' },
+      { property: 'og:image:height', content: 640 },
+      { property: 'og:image:width', content: 640 },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
