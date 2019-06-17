@@ -29,6 +29,7 @@ export default {
       { property: 'og:image', content: 'https://nuxtjs.org/meta_640.png' },
       { property: 'og:image:height', content: 640 },
       { property: 'og:image:width', content: 640 },
+      { property: 'og:image:type', content: 'image/png' },
       { property: 'og:image:alt', content: 'Nuxt.js Logo' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
