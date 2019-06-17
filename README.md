@@ -12,6 +12,7 @@ This is a basic starter project for a prerendered [Vue.js](https://vuejs.org/) +
 - Pre-rendered dynamic pages using a sample `Item` datatype
 - Integrates with [HotJar](https://hotjar.com"), [Mailchimp](https://mailchimp.com"), and [Google Analytics](https://analytics.google.com/analytics/web/#/)
 - Includes [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) for outstanding SEO
+- Pre-configured with [OpenGraph](http://ogp.me/) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html) meta tags for beautiful [unfurls](https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254) when sharing on social media
 - Customizable UI using [Bootstrap](https://getbootstrap.com) & [SASS](https://sass-lang.com) variables
 
 **NOTE:** this project can only be deployed via Netlify with [continuous deployment](https://www.netlify.com/docs/continuous-deployment/) enabled.
@@ -28,6 +29,8 @@ $ yarn run dev
 # Build for production
 $ yarn run build
 ```
+
+Note that [Prettier]() will automatically clean up your code when you save. You can adjust this behavior in the `build` section at line `127` in `nuxt.config.js`.
 
 ### Pre-rendered Dynamic Pages
 
@@ -62,6 +65,10 @@ These variables can be configured in a variety of ways - please consult the [Net
 ### JSON-LD Structured Data
 
 The [JSON-LD Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) can be updated by modifying the `jsonld()` function in the `layouts/default.vue` file. This feature shouldn't be used anywhere else - one `JSON-LD` snippet should describe the entire site.
+
+### OpenGraph and Twitter Card Meta Tags
+
+The `<meta>` tags for [OpenGraph](http://ogp.me/) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html) are located in the `head` section of `nuxt.config.js`. **You should change these from their default values**. You can validate your changes using the [Twitter Card Validator](https://cards-dev.twitter.com/validator) and the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/sharing).
 
 ### Bootstrap + SASS Configuration
 

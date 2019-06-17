@@ -81,6 +81,20 @@
                 snippet for fantastic SEO
               </li>
               <li>
+                Pre-configured with
+                <a href="http://ogp.me/" target="_blank">
+                  OpenGraph
+                </a>
+                and
+                <a
+                  href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html"
+                  target="_blank"
+                >
+                  Twitter Card
+                </a>
+                meta tags
+              </li>
+              <li>
                 Bundled with
                 <a
                   href="https://github.com/FortAwesome/vue-fontawesome"

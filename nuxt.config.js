@@ -12,7 +12,21 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+
+      // Twitter Card Meta
+      // Doc: https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html
+      { property: 'twitter:card', content: 'summary' },
+      { property: 'twitter:site', value: '@codotype' },
+      { property: 'twitter:creator', value: '@aeksco' },
+
+      // OpenGraph Meta
+      // Doc: http://ogp.me/
+      { property: 'og:url', content: 'https://nuxt-netlify-lambda-starter.netlify.com' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Nuxt Netlify Lambda Starter' },
+      { property: 'og:description', content: 'SEO-friendly website starter backed by Netlify lambda functions' },
+      { property: 'og:image', content: 'https://nuxtjs.org/meta_640.png' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -116,7 +130,10 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true // NOTE - this is set to `true` so prettier automatically cleans up the file on save
+          }
         })
       }
     }
